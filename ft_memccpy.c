@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/16 12:03:54 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/16 17:31:49 by jescully         ###   ########.fr       */
+/*   Created: 2020/11/16 14:46:51 by jescully          #+#    #+#             */
+/*   Updated: 2020/11/16 18:18:23 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	unsigned char	*dest;
-	unsigned int	i;
-
-	dest = s;
+	int i;
+	unsigned char *cdest;
+	const char *csrc;
+		
+	cdest = dest;
+	csrc = src;
 	i = 0;
-	while (i < n)
-		dest[i++] = c;
-	return (dest);
+	while (csrc[i] != c && csrc[i] != '\0')
+	{
+		cdest[i] = csrc[i];
+		i++;
+	}
+	if (i > n)
+		return (NULL);
+	return (&cdest[++i]);
 }
