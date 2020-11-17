@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/17 09:38:39 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/17 16:43:39 by jescully         ###   ########.fr       */
+/*   Created: 2020/11/17 14:05:59 by jescully          #+#    #+#             */
+/*   Updated: 2020/11/17 14:45:45 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-size_t	ft_strlen(const char *s)
+char *ft_strchr(const char *s, int c)
 {
 	int i;
+	char *cs;
 
+	cs = (char *)s;
 	i = 0;
-	while(s[i])
+	while (s)
+	{
+		if (cs[i] == c)
+			return &cs[i];
 		i++;
-	return (i);
+	}
+	return (NULL);
 }
