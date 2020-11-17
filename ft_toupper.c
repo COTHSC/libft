@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/16 17:43:01 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/17 13:32:39 by jescully         ###   ########.fr       */
+/*   Created: 2020/11/17 09:58:48 by jescully          #+#    #+#             */
+/*   Updated: 2020/11/17 10:15:40 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_toupper(int c)
 {
-	int i;
-	unsigned char *cs;
-	unsigned char cc;
-
-	cs = (unsigned char *)s;
-	cc = (unsigned char)c;
-	i = 0;
-
-	while (cs && i <= n)
-	{
-		if (cs[i] == cc)
-			return &cs[i];
-		i++;
-	}
-	return (NULL);
+	if (c > 96 && c < 123)
+		c = c - 32;
+	return (c);
 }

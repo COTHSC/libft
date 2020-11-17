@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/16 17:43:01 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/17 13:32:39 by jescully         ###   ########.fr       */
+/*   Created: 2020/11/17 12:14:22 by jescully          #+#    #+#             */
+/*   Updated: 2020/11/17 12:55:02 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	int i;
-	unsigned char *cs;
-	unsigned char cc;
+	unsigned char *cs1;
+	unsigned char *cs2;
 
-	cs = (unsigned char *)s;
-	cc = (unsigned char)c;
 	i = 0;
-
-	while (cs && i <= n)
+	cs1 = (unsigned char *)s1;
+	cs2 = (unsigned char *)s2;
+	while (i < n)
 	{
-		if (cs[i] == cc)
-			return &cs[i];
-		i++;
+		if (cs1[i] == cs2[i])
+			i++;
+		else
+			return (cs1[i] -cs2[i]);
 	}
-	return (NULL);
+	return (0);
 }
