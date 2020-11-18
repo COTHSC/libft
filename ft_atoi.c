@@ -1,21 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/16 21:43:32 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/18 10:24:20 by jescully         ###   ########.fr       */
+/*   Created: 2020/11/18 13:06:08 by jescully          #+#    #+#             */
+/*   Updated: 2020/11/18 16:15:25 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_atoi(const char *nptr)
 {
-	if(ft_isalpha(c) || ft_isdigit(c))
-		return (1);
-	else
-		return (0);
+	int i;
+	int sign;
+	int result;
+	char *cnptr;
+
+	sign = 1;
+	i = 0;
+	result = 0;
+	cnptr = (char *)nptr;
+	while(IS_WHITESPACE(*cnptr))
+		cnptr++;
+	if (*cnptr == '-' && ft_isdigit(*(cnptr + 1)))
+	{
+		sign = -1;
+		cnptr++;
+	}
+	if (*cnptr == '+' && ft_isdigit(*(cnptr + 1)))
+		cnptr++;
+	while (ft_isdigit(*cnptr))
+	{
+		result = result * 10 + (*cnptr - '0');
+		cnptr++;
+	}
+	return(sign * result);
 }
+
+
+	
+

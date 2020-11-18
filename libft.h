@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 13:43:14 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/17 18:21:13 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/18 17:38:29 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,14 @@
 
 
 
-#include <unistd.h>
-# include <string.h>
-# include <stdlib.h>
 # include <unistd.h>
+# include <bsd/string.h>
+# include <stdio.h>
+# include <ctype.h>
+# include <stdlib.h>
+# define TRIM(c) (c == ' ' || c == '\n' || c == '\t')
+# define ADDTL_WHITESPACE(c) (c == '\v' || c == '\r' || c == '\f')
+# define IS_WHITESPACE(c) (TRIM(c) || ADDTL_WHITESPACE(c))
 
 void    *ft_memset(char *s, int c, int n);
 void    ft_bzero(char *s, size_t n);
@@ -37,5 +41,10 @@ char    *ft_strrchr(const char *s, int c);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t  ft_strlcat (char *dst, const char *src, size_t size);
 size_t  ft_strlen(const char *s);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+int     ft_atoi(const char *nptr);
+void    *ft_calloc(size_t nmemb, size_t size);
+
 
 #endif

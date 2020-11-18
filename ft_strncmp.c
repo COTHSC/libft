@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:54:28 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/17 16:56:04 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/18 16:44:05 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,12 @@
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	int i;
+        int cn;
+
+        cn = (int)n;
 
 	i = 0;
-	while (i < n)
+	while (i < cn)
 	{
 		if (s1[i] == s2[i])
 			i++;
