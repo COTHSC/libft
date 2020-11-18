@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 14:46:51 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/18 16:37:28 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/18 22:39:06 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,13 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	cdest = dest;
 	csrc = src;
 	i = 0;
-	while (csrc[i] != c && csrc[i] != '\0')
+	while (i < n)
 	{
 		cdest[i] = csrc[i];
+		if (cdest[i] == c)
+			 return (&cdest[++i]);
 		i++;
 	}
-	if (i > cn)
-		return (NULL);
-	return (&cdest[++i]);
+
+	return (NULL);
 }
