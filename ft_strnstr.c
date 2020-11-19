@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 09:36:16 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/18 16:46:03 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/19 10:24:13 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (big[i] && i < cn)
 	{
 		c = 0;
-		while (big[i] == little[c])
+		while (big[i] == little[c] && i < cn)
 		{
 			c++;
 			i++;

@@ -1,32 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/17 17:22:12 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/19 10:21:02 by jescully         ###   ########.fr       */
+/*   Created: 2020/11/19 11:23:26 by jescully          #+#    #+#             */
+/*   Updated: 2020/11/19 12:00:59 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+char *ft_strtrim(char const *s1, char const *set)
 {
-	int	j;
-	int	k;
+	int i;
+	int c;
+	int d;
+	char *str;
 
-	j = 0;
-	k = 0;
-	while (dst[j] && j < size)
-		j++;
-	while ((src[k]) && ((j + k + 1) < size))
-	{
-		dst[j + k] = src[k];
-		k++;
-	}
-	if (j != size)
-		dst[j + k] = '\0';
-	return (j + ft_strlen(src));
+	i = 0;
+	c = 0;
+	d = ft_strlen(s1);
+	while (ft_ischarset(s1[i], set))
+		i++;
+	while (ft_ischarset(s1[d], set))
+		d--;
+	d = d - i;
+        str = (char *)malloc(sizeof(char) * (d + 1));
+        if (str == NULL)
+                return (NULL);
+	c = 0;
+	while (!ft_ischarset(s1[i], set))
+		str[c++] = s1[i++];
+	str[c] = '\0';
+	return (str);
 }

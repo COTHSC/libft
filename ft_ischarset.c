@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_ischarset.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/17 17:22:12 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/19 10:21:02 by jescully         ###   ########.fr       */
+/*   Created: 2020/11/19 11:59:56 by jescully          #+#    #+#             */
+/*   Updated: 2020/11/19 12:00:48 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+int     ft_ischarset(char c, char const *set)
 {
-	int	j;
-	int	k;
+        int i;
 
-	j = 0;
-	k = 0;
-	while (dst[j] && j < size)
-		j++;
-	while ((src[k]) && ((j + k + 1) < size))
-	{
-		dst[j + k] = src[k];
-		k++;
-	}
-	if (j != size)
-		dst[j + k] = '\0';
-	return (j + ft_strlen(src));
+        i = 0;
+        while (set[i])
+        {
+                if (set[i] == c)
+                        return (1);
+                i++;
+        }
+        return (0);
 }
+
+

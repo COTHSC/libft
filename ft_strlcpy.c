@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 17:09:07 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/18 16:43:11 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/19 10:17:08 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,18 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
         cn = (int)size;
 
 	i = 0;
+
+	if (cn == 0)
+		return (strlen(src));
 	
-	while (src[i] && i < cn)
+	while (src[i] && i < cn -1)
 	{
 		dst[i] = src[i];
 		i++;
 	}
-	dst[i] = '\0';
-	c = ft_strlen(str);
-	return (c);
+	if (i < cn)
+		dst[i] = '\0';
+	while (src[i] != '\0')
+		i++;
+	return (i);
 }
