@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 15:13:00 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/19 23:42:31 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/20 16:35:02 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main()
 	int i = 0;
 
         char **test;
-        test = ft_split("2hello2tu2va2bien?", '2');
+        test = ft_split("2hello222tu22va2bien?", '2');
         printf("hello ? %s\n", *(test));
         printf("tu ? %s\n", *(test + 1));
         printf("va ? %s\n", *(test + 2));
@@ -27,7 +27,7 @@ int main()
 
 
         while (test[i])
-                free((void *)test[i++]);	
+                free(test[i++]);	
 //	free(test[1]);
 //	free(test[2]);
     

@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 12:02:10 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/19 22:49:51 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/20 16:48:16 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ int	ft_countthewords(char const *s, char c)
 	return (cw);
 }
 
-
 char	**ft_split(char const *s, char c)
 {
 	int wc;
@@ -42,12 +41,11 @@ char	**ft_split(char const *s, char c)
 	int row;
 	int collumn;
 
-	row = 0;	
+	row = 0;
 	lead = 0;
 	wc = ft_countthewords(s, c);
 	if (!(strs = (char**)malloc(sizeof(char*) * (wc + 1))))
 		return (NULL);
-	printf("the size of the malloc %i \n", wc + 1);
 	while (row < wc)
 	{
 		collumn = 0;
@@ -58,20 +56,10 @@ char	**ft_split(char const *s, char c)
 			lead ++;
 		if (!(strs[row] = (char *)malloc(sizeof(char) * ((lead - follow + 1)))))
 			return (NULL);
-		printf("the size of the malloc %i \n", lead - follow + 1);
 		while (follow < lead)
-		{
-			strs[row][collumn] = s[follow];
-			follow++;
-			collumn++;
-		}
-		strs[row][collumn] = '\0';
-		row++;
+			strs[row][collumn++] = s[follow++];
+		strs[row++][collumn] = '\0';
 	}
 	strs[row] = NULL;
 	return (strs);
-
 }
-
-	
-
