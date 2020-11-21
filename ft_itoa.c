@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:45:20 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/20 13:44:35 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/21 17:08:57 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 char *ft_itoa(int n)
 {
-	int i;
 	char *str;
-	char *bu;
-	char *min;
 
 	
 	if(!(str = (char*)(malloc(sizeof(char) * (2)))))

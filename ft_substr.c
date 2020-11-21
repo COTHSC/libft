@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 10:26:42 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/19 10:43:22 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/21 17:09:43 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char *ft_substr(char const *s, unsigned int start,size_t len)
 {
 	unsigned int i;
 	int c;
-	int size;
+	size_t size;
 	char *ret;
 	
 	c = start;

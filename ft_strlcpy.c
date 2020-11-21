@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 17:09:07 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/19 10:17:08 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/21 11:19:37 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	int i;
-	int c;
-	char *str = "this is a str";
         int cn;
 
         cn = (int)size;
