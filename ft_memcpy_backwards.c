@@ -1,39 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy_backwards.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/16 18:24:13 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/24 12:05:58 by jescully         ###   ########.fr       */
+/*   Created: 2020/11/16 14:46:51 by jescully          #+#    #+#             */
+/*   Updated: 2020/11/24 12:17:55 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memcpy_backwards(void *dest, const void *src, size_t n)
 {
-	int i;
-	unsigned char *cdest;
-	const char *csrc;
-        int cn;
-	char temp;
-
-        cn = (int)n;
+	char *cdest;
+	char *csrc;
 	
-	cdest = dest;
-	csrc = src;
-	i = 0;
-	temp = csrc[i + 1];
+	if (n == 0 || src == dest)
+		return (dest);
+	cdest = (char *)dest;
+	csrc = (char *)src;
 
-	if (cdest[0] > csrc[0])
-	{
-		ft_memcpy(dest, src, n);
+	while (n--)
+	{	
+		cdest[n] = csrc[n];
 	}
-	else
-	{
-		ft_memcpy_backwards(dest, src, n);
-	}
-	return (dest);
+
+	return (cdest);
 }

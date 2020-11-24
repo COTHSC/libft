@@ -6,7 +6,7 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/11/21 17:31:30 by jescully         ###   ########.fr        #
+#    Updated: 2020/11/24 12:34:08 by jescully         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,6 +53,7 @@ SRC = ft_atoi.c \
 	ft_strcpy.c \
 	ft_strmapi.c \
 	ft_tolower.c \
+	ft_memcpy_backwards.c \
 
 
 OBJ = $(SRC:.c=.o)
