@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 13:06:08 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/18 16:15:25 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 15:39:24 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	result = 0;
 	cnptr = (char *)nptr;
-	while(IS_WHITESPACE(*cnptr))
+	while (IS_WHITESPACE(*cnptr))
 		cnptr++;
 	if (*cnptr == '-' && ft_isdigit(*(cnptr + 1)))
 	{
@@ -37,9 +37,5 @@ int	ft_atoi(const char *nptr)
 		result = result * 10 + (*cnptr - '0');
 		cnptr++;
 	}
-	return(sign * result);
+	return (sign * result);
 }
-
-
-	
-

@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 17:04:18 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/18 17:37:53 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 15:40:31 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, size);
 	return (ptr);
 }
-

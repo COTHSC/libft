@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 13:09:20 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/20 13:41:24 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 16:44:58 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,3 @@ char	*ft_strcpy(char *dst, const char *src)
 	}
 	return (dst);
 }
-
-

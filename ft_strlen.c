@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 09:38:39 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/17 17:49:31 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 15:45:05 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	int i;
 
 	i = 0;
-	while(s[i])
+	while (s[i])
 		i++;
 	return (i);
 }

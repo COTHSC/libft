@@ -6,15 +6,15 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 15:05:31 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/19 15:08:22 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 16:52:40 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_ischar(char o, char c)
+int	ft_ischar(char o, char c)
 {
-        if (o == c)
-       		return (1);
-        return (0);
+	if (o == c)
+		return (1);
+	return (0);
 }

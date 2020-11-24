@@ -6,13 +6,13 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 12:14:22 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/18 16:40:32 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 16:56:00 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	int i;
 	unsigned char *cs1;
@@ -28,7 +28,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 		if (cs1[i] == cs2[i])
 			i++;
 		else
-			return (cs1[i] -cs2[i]);
+			return (cs1[i] - cs2[i]);
 	}
 	return (0);
 }

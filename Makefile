@@ -6,7 +6,7 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/11/24 12:34:08 by jescully         ###   ########.fr        #
+#    Updated: 2020/11/24 19:20:15 by jescully         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,6 +55,13 @@ SRC = ft_atoi.c \
 	ft_tolower.c \
 	ft_memcpy_backwards.c \
 
+BONSRC = ft_lstsize.c \
+      ft_lsadd_front.c \
+      ft_lstnew.c \
+      ft_lstlast.c \
+      ft_lstadd_back.c \
+
+OBJBON = $(BONSRC:.c=.o)
 
 OBJ = $(SRC:.c=.o)
 
@@ -74,6 +81,10 @@ clean:
 fclean: clean
 	/bin/rm -f $(NAME)
 	echo "Cleaned up .o and .a files"
+
+bonus: $(OBJBON)
+	ar rc $(NAME) $? $(OBJBON)
+	ranlib $(NAME)
 
 re: fclean all
 

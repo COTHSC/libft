@@ -6,15 +6,14 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 09:36:26 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/17 09:38:01 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 15:44:33 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-	       return (1);
+		return (1);
 	else
 		return (0);
 }
-

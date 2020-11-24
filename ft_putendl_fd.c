@@ -6,17 +6,17 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 18:34:40 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/20 18:38:58 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 16:45:58 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
 	char c;
-	c = '\n';
-        write(fd, s, ft_strlen(s));
-        write(fd, &c, 1);
-}
 
+	c = '\n';
+	write(fd, s, ft_strlen(s));
+	write(fd, &c, 1);
+}

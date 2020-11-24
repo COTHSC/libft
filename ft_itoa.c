@@ -6,18 +6,17 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:45:20 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/21 17:08:57 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 15:47:28 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char *str;
 
-	
-	if(!(str = (char*)(malloc(sizeof(char) * (2)))))
+	if (!(str = (char*)(malloc(sizeof(char) * (2)))))
 		return (NULL);
 	if (n == -2147483648)
 		return (ft_strcpy(str, "-2147483648"));
@@ -27,8 +26,6 @@ char *ft_itoa(int n)
 		str[1] = '\0';
 		str = ft_strjoin(str, ft_itoa(-n));
 	}
-
-
 	if (n >= 10)
 		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
 	if (n < 10 && n >= 0)
@@ -36,12 +33,5 @@ char *ft_itoa(int n)
 		str[0] = n + '0';
 		str[1] = '\0';
 	}
-
 	return (str);
 }
-
-	
-
-
-
-

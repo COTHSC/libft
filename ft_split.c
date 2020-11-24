@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 12:02:10 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/20 16:48:16 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 16:56:33 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,10 @@ char	**ft_split(char const *s, char c)
 	{
 		collumn = 0;
 		while (ft_ischar(s[lead], c))
-			lead ++;
+			lead++;
 		follow = lead;
 		while (!ft_ischar(s[lead], c) && s[lead])
-			lead ++;
+			lead++;
 		if (!(strs[row] = (char *)malloc(sizeof(char) * ((lead - follow + 1)))))
 			return (NULL);
 		while (follow < lead)

@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 21:31:43 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/16 21:42:28 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 15:43:05 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,4 @@ int	ft_isalpha(int c)
 		return (1);
 	else
 		return (0);
-}	
+}

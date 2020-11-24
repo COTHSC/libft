@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 18:24:13 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/24 12:05:58 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/24 15:34:29 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,18 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int i;
-	unsigned char *cdest;
-	const char *csrc;
-        int cn;
-	char temp;
+	char	*srcc;
+	char	*dstc;
+	size_t	i;
 
-        cn = (int)n;
-	
-	cdest = dest;
-	csrc = src;
 	i = 0;
-	temp = csrc[i + 1];
-
-	if (cdest[0] > csrc[0])
-	{
-		ft_memcpy(dest, src, n);
-	}
+	srcc = (char *)src;
+	dstc = (char *)dest;
+	if (srcc < dstc)
+		while ((int)(--n) >= 0)
+			*(dstc + n) = *(srcc + n);
 	else
-	{
-		ft_memcpy_backwards(dest, src, n);
-	}
+		while (++i < n)
+			*(dstc + i) = *(srcc + i);
 	return (dest);
 }
