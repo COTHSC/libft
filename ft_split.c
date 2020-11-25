@@ -6,13 +6,13 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 12:02:10 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 11:38:35 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 14:09:27 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_countthewords(char const *s, char c)
+static int			ft_countthewords(char const *s, char c)
 {
 	int		i;
 	int		cw;
@@ -32,7 +32,7 @@ int			ft_countthewords(char const *s, char c)
 	return (cw);
 }
 
-int			ftwtw(int len, char **strs, int row, const char *s)
+static int			ftwtw(int len, char **strs, int row, const char *s)
 {
 	int		collumn;
 
@@ -46,7 +46,7 @@ int			ftwtw(int len, char **strs, int row, const char *s)
 	return (row);
 }
 
-char		**ft_split(char const *s, char c)
+char				**ft_split(char const *s, char c)
 {
 	int		wc;
 	char	**strs;

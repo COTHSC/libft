@@ -6,7 +6,7 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/11/25 11:40:41 by jescully         ###   ########.fr        #
+#    Updated: 2020/11/25 13:03:31 by jescully         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,6 @@ SRC = ft_atoi.c \
 	ft_isascii.c \
 	ft_memccpy.c \
 	ft_putchar_fd.c \
-	ft_strcpy.c \
 	ft_strmapi.c \
 	ft_tolower.c \
 	ft_memcpy_backwards.c \

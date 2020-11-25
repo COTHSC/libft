@@ -6,13 +6,28 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 13:06:08 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 10:01:01 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 14:08:47 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+static int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
 
-int	ft_atoi(const char *nptr)
+static int	ft_iswhitespace(int c)
+{
+	if (c == '\v' || c == '\r' || c == '\f' || \
+		c == ' ' || c == '\n' || c == '\t')
+		return (1);
+	else
+		return (0);
+}
+
+int			ft_atoi(const char *nptr)
 {
 	int		i;
 	int		sign;
@@ -23,7 +38,7 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	result = 0;
 	cnptr = (char *)nptr;
-	while (IS_WHITESPACE(*cnptr))
+	while (ft_iswhitespace(*cnptr))
 		cnptr++;
 	if (*cnptr == '-' && ft_isdigit(*(cnptr + 1)))
 	{
