@@ -6,7 +6,7 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/11/24 19:20:15 by jescully         ###   ########.fr        #
+#    Updated: 2020/11/25 11:40:41 by jescully         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,7 @@ so: $(OBJ)
 	$(CC) -shared -o libft.so $(OBJ)
 
 clean:
-	/bin/rm -f $(OBJ)
+	/bin/rm -f $(OBJ) $(OBJBON)
 	echo "Cleaned up .o files"
 
 fclean: clean
