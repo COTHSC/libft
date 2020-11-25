@@ -6,13 +6,13 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/11/25 13:03:31 by jescully         ###   ########.fr        #
+#    Updated: 2020/11/25 14:40:32 by jescully         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = clang-9
+CC = clang
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -52,7 +52,6 @@ SRC = ft_atoi.c \
 	ft_putchar_fd.c \
 	ft_strmapi.c \
 	ft_tolower.c \
-	ft_memcpy_backwards.c \
 
 BONSRC = ft_lstsize.c \
       ft_lsadd_front.c \
