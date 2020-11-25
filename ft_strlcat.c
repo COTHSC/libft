@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 17:22:12 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/21 16:29:49 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 09:56:57 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	j;
-	int	k;
+	int		k;
 
 	j = 0;
 	k = 0;

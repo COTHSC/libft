@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 10:52:00 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/24 16:08:27 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 09:57:29 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int size;
-	char *retstr;
-	int i;
-	int c;
+	int		size;
+	char	*retstr;
+	int		i;
+	int		c;
 
 	i = 0;
 	c = 0;

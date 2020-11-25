@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 18:44:13 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/24 16:15:19 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 09:58:00 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *s)
 {
-	int	i;
+	int		i;
 	char	*str;
 
 	i = 0;

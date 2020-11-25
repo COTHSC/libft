@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 12:02:10 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/24 16:56:33 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 10:17:15 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,23 @@ int	ft_countthewords(char const *s, char c)
 	return (cw);
 }
 
+int		advance(char const *s, char c, int lead)
+{
+		while (ft_ischar(s[lead], c))
+			lead++;
+		return (lead);
+}
+	
+	
+
 char	**ft_split(char const *s, char c)
 {
-	int wc;
-	char **strs;
-	int lead;
-	int follow;
-	int row;
-	int collumn;
+	int		wc;
+	char	**strs;
+	int		lead;
+	int		follow;
+	int		row;
+	int		collumn;
 
 	row = 0;
 	lead = 0;

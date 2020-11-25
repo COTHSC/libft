@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 12:14:22 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/24 16:56:00 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 09:59:56 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int i;
-	unsigned char *cs1;
-	unsigned char *cs2;
-	int cn;
+	int				i;
+	unsigned char	*cs1;
+	unsigned char	*cs2;
+	int				cn;
 
 	cn = (int)n;
 	i = 0;

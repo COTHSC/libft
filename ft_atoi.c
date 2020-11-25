@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 13:06:08 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/24 15:39:24 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 10:01:01 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int i;
-	int sign;
-	int result;
-	char *cnptr;
+	int		i;
+	int		sign;
+	int		result;
+	char	*cnptr;
 
 	sign = 1;
 	i = 0;
