@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 09:36:16 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 09:55:40 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 15:02:57 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	cn = (int)len;
 	i = 0;
-	if (strlen(little) == 0)
+	if (ft_strlen(little) == 0)
 		return ((char *)big);
 	while (big[i] && i < cn)
 	{
@@ -29,7 +29,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			c++;
 			i++;
-			if (c == strlen(little))
+			if (c == ft_strlen(little))
 				return ((char *)&big[i - c]);
 		}
 		i++;

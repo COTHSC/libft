@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 18:24:13 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 14:12:51 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 18:20:36 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	int				i;
-	unsigned char	*cdest;
+	unsigned char	*cdest; //
 	const char		*csrc;
 	int				cn;
 

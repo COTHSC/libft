@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:45:20 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 13:02:53 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/26 11:31:53 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,16 @@ char	*ft_itoa(int n)
 {
 	char *str;
 
-	if (!(str = (char*)(malloc(sizeof(char) * (2)))))
-		return (NULL);
 	if (n == -2147483648)
 	{
+		if (!(str = (char*)(malloc(sizeof(char) * (12)))))
+			return (NULL);
 		ft_strlcpy(str, "-2147483648", 12);
 		return (str);
 	}
+
+	if (!(str = (char*)(malloc(sizeof(char) * (2)))))
+		return (NULL);
 	if (n < 0)
 	{
 		str[0] = '-';

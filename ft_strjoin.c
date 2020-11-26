@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 10:52:00 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 09:57:29 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 15:02:20 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	c = 0;
-	size = strlen(s1) + strlen(s2);
+	size = ft_strlen(s1) + ft_strlen(s2);
 	retstr = (char*)malloc(sizeof(retstr) * (size + 1));
 	if (retstr == NULL)
 		return (NULL);

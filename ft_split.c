@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 12:02:10 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 14:09:27 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/26 11:46:01 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ static int			ft_countthewords(char const *s, char c)
 			cw++;
 		i++;
 	}
+	if (i ==0)
+		return (0);
 	if (s[0] != c)
 		cw++;
 	if (s[i - 1] == c)

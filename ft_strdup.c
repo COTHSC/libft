@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 18:44:13 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 09:58:00 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 15:28:45 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ char	*ft_strdup(const char *s)
 		str[i] = s[i];
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }

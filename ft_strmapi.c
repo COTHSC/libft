@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 16:13:30 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 09:56:29 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/25 15:03:43 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 
 	i = 0;
-	if (!(str = (char *)(malloc(sizeof(char) * (strlen(s) + 1)))))
+	if (!(str = (char *)(malloc(sizeof(char) * (ft_strlen(s) + 1)))))
 		return (NULL);
 	while (s[i])
 	{

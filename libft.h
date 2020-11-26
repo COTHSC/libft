@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 13:43:14 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 13:13:36 by jescully         ###   ########.fr       */
+/*   Updated: 2020/11/26 09:24:53 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <bsd/string.h>
-# include <stdio.h>
-# include <ctype.h>
 # include <stdlib.h>
 
 typedef struct	s_list
@@ -68,5 +65,4 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-void			*ft_memcpy_backwards(void *dest, const void *src, size_t n);
 #endif
