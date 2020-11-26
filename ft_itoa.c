@@ -23,7 +23,6 @@ char	*ft_itoa(int n)
 		ft_strlcpy(str, "-2147483648", 12);
 		return (str);
 	}
-
 	if (!(str = (char*)(malloc(sizeof(char) * (2)))))
 		return (NULL);
 	if (n < 0)

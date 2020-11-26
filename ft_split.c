@@ -25,7 +25,7 @@ static int			ft_countthewords(char const *s, char c)
 			cw++;
 		i++;
 	}
-	if (i ==0)
+	if (i == 0)
 		return (0);
 	if (s[0] != c)
 		cw++;
