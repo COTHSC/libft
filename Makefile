@@ -6,7 +6,7 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/11/25 15:01:41 by jescully         ###   ########.fr        #
+#    Updated: 2020/11/27 13:17:59 by jean             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,16 +74,12 @@ so: $(OBJ)
 
 clean:
 	/bin/rm -f $(OBJ) $(OBJBON)
-	echo "Cleaned up .o files"
 
 fclean: clean
 	/bin/rm -f $(NAME)
-	echo "Cleaned up .o and .a files"
 
 bonus: $(OBJBON)
 	ar rc $(NAME) $? $(OBJBON)
 	ranlib $(NAME)
 
 re: fclean all
-
-
