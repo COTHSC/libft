@@ -6,7 +6,7 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/12/01 15:57:38 by jean             ###   ########.fr        #
+#    Updated: 2020/12/01 21:01:27 by jean             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,6 @@ SRC = ft_atoi.c \
 	ft_strncmp.c \
 	ft_toupper.c \
 	ft_bzero.c \
-	ft_ischarset.c \
 	ft_memcmp.c \
 	ft_putnbr_fd.c \
 	ft_strjoin.c \
