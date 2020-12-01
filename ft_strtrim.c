@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 11:23:26 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/01 21:05:25 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/01 21:06:23 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		d;
 	char	*str;
 
-	if(!s1 || !s2)
+	if(!s1 || !set)
 		return (NULL);
 	i = 0;
 	c = 0;
