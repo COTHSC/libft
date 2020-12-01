@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 14:46:51 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/27 12:49:11 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/01 16:43:10 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
 	size_t			i;
 	unsigned char	*cdest;
-	unsigned char		*csrc;
+	unsigned char	*csrc;
 	int				cn;
 
 	cn = (int)n;
