@@ -6,7 +6,7 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/11/27 13:17:59 by jean             ###   ########.fr        #
+#    Updated: 2020/12/01 15:24:34 by jean             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ SRC = ft_atoi.c \
 	ft_tolower.c \
 
 BONSRC = ft_lstsize.c \
-      ft_lsadd_front.c \
+      ft_lstadd_front.c \
       ft_lstnew.c \
       ft_lstlast.c \
       ft_lstadd_back.c \
