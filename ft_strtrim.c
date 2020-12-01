@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 11:23:26 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/01 21:06:23 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/01 21:57:53 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	i = 0;
 	c = 0;
-	d = ft_strlen(s1);
+	d = ft_strlen(s1 - 1);
 	while (ft_ischarset(s1[i], set))
 		i++;
-	while (ft_ischarset(s1[d - 1], set))
+	while (ft_ischarset(s1[d], set))
 		d--;
 	d = d - i;
 	if (!(str = (char *)malloc(sizeof(char) * (d + 1))))
