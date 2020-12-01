@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 13:43:14 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/26 09:24:53 by jescully         ###   ########.fr       */
+/*   Updated: 2020/12/01 21:04:00 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ void			*ft_calloc(size_t nmemb, size_t size);
 char			*ft_strdup(const char *s);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s1, char const *set);
-int				ft_ischarset(char c, char const *set);
 char			**ft_split(char const *s, char c);
 int				ft_ischar(char o, char c);
 char			*ft_strjoin(char const *s1, char const *s2);
