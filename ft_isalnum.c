@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 21:43:32 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 14:10:01 by jescully         ###   ########.fr       */
+/*   Updated: 2020/12/01 17:22:20 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	ft_isalphaa(int c)
 		return (0);
 }
 
-int			ft_isdigitt(int c)
+static int	ft_isdigitt(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
