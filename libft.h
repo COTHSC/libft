@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 13:43:14 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/02 13:13:11 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/02 13:20:11 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ char			*ft_strdup(const char *s);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
-int				ft_ischar(char o, char c);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_itoa(int n);
 char			*ft_strcpy(char *dest, const char *src);
