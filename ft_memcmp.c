@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 12:14:22 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/02 11:55:17 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/02 11:59:17 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	str1 = (unsigned const char *)s1;
 	str2 = (unsigned const char *)s2;
-	while (i < n - 1)
+	while (i < n)
 	{
 		if (str1[i] == str2[i])
 			i++;
