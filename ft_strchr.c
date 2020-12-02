@@ -6,11 +6,11 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 14:05:59 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/25 09:58:35 by jescully         ###   ########.fr       */
+/*   Updated: 2020/12/02 13:04:54 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
