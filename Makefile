@@ -6,7 +6,7 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/12/02 13:42:35 by jean             ###   ########.fr        #
+#    Updated: 2020/12/02 13:45:23 by jean             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,6 @@ CC = clang
 CFLAGS = -Wall -Wextra -Werror
 
 SRC = ft_atoi.c \
-	ft_ischar.c \
 	ft_memchr.c \
 	ft_putendl_fd.c \
 	ft_strdup.c \
