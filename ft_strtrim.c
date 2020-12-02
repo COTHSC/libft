@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 11:23:26 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/02 10:23:30 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/02 13:00:18 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,19 @@ static int	ft_ischarset(char c, char const *set)
 
 char		*ft_strtrim(char const *s1, char const *set)
 {
-	int		i;
-	int		c;
-	int		d;
-	char	*str;
+	size_t		i;
+	int			c;
+	size_t		d;
+	char		*str;
 
 	if (!s1 || !set)
 		return (NULL);
 	i = 0;
 	c = 0;
 	d = ft_strlen(s1);
-	while (ft_ischarset(s1[i], set))
+	while (s1[i] && ft_ischarset(s1[i], set))
 		i++;
-	while (ft_ischarset(s1[d - 1], set))
+	while (s1[i] && ft_ischarset(s1[d - 1], set))
 		d--;
 	d = d - i;
 	if (d < 0)
