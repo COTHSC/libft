@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 18:54:51 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/01 16:12:48 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/02 12:03:57 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putnbr_fd(int n, int fd)
 	else if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
-		ft_putnbr_fd(n, fd);
+		ft_putnbr_fd(-n, fd);
 	}
 	else if (n >= 10)
 	{
