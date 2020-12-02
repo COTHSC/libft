@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 12:03:54 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/16 17:31:49 by jescully         ###   ########.fr       */
+/*   Updated: 2020/12/02 10:09:53 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*dest;
-	unsigned int	i;
+	size_t			i;
 
 	dest = s;
 	i = 0;
