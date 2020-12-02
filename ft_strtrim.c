@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 11:23:26 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/02 13:00:18 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/02 13:01:34 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	ft_ischarset(char c, char const *set)
 char		*ft_strtrim(char const *s1, char const *set)
 {
 	size_t		i;
-	int			c;
+	size_t		c;
 	size_t		d;
 	char		*str;
 
