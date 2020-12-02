@@ -6,11 +6,18 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 12:02:10 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/26 11:46:01 by jescully         ###   ########.fr       */
+/*   Updated: 2020/12/02 13:19:11 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int			ft_ischar(char o, char c)
+{
+	if (o == c)
+		return (1);
+	return (0);
+}
 
 static int			ft_countthewords(char const *s, char c)
 {
