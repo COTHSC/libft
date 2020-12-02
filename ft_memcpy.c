@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 14:46:51 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/01 16:10:34 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/02 10:31:10 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,15 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int			i;
-	char		*cdest;
-	const char	*csrc;
-	int			cn;
+	size_t			i;
 
-	cn = (int)n;
-	cdest = dest;
-	csrc = src;
 	i = 0;
 	if (!dest && !src)
 		return (NULL);
 	while (i < cn)
 	{
-		cdest[i] = csrc[i];
+		((char *)dest)[i] = ((char *)src)[i];
 		i++;
 	}
-	return (cdest);
+	return (dest);
 }
