@@ -6,11 +6,11 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 12:03:54 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/02 10:09:53 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/02 10:38:52 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

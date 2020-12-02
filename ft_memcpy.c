@@ -6,11 +6,11 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 14:46:51 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/02 10:31:10 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/02 10:39:34 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
