@@ -6,13 +6,13 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/12/03 09:11:41 by jean             ###   ########.fr        #
+#    Updated: 2020/12/05 21:23:18 by jean             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = clang-9
+CC = clang
 
 CFLAGS = -Wall -Wextra -Werror
 
