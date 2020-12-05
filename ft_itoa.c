@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:45:20 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/05 16:06:01 by jean             ###   ########.fr       */
+/*   Updated: 2020/12/05 21:34:27 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,15 @@ static int	ilength(long long int number)
 		i++;
 		number = -number;
 	}
-	
 	while (number >= 10)
 	{
-		number = number/10;
+		number = number / 10;
 		i++;
 	}
 	return (i);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char			*ret;
 	unsigned int	nb;
@@ -40,15 +39,14 @@ char	*ft_itoa(int n)
 	if (!(ret = (char*)malloc(sizeof(char) * (ilength(n) + 1))))
 		return (NULL);
 	ret[ilength(n)] = '\0';
+	nb = n;
 	if (n < 0)
 	{
 		ret[0] = '-';
 		nb = -n;
 	}
-	else
-		nb = n;
 	len = ilength(n) - 1;
-	while (ilength(nb) !=1)
+	while (ilength(nb) != 1)
 	{
 		ret[len--] = nb % 10 + '0';
 		nb = nb / 10;
@@ -58,5 +56,4 @@ char	*ft_itoa(int n)
 	else
 		ret[1] = nb + '0';
 	return (ret);
-
 }
