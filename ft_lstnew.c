@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/24 17:57:28 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/24 18:53:40 by jescully         ###   ########.fr       */
+/*   Updated: 2020/12/02 15:10:39 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ t_list	*ft_lstnew(void *content)
 	if (!(t = ((t_list*)malloc(sizeof(t_list)))))
 		return (NULL);
 	t->content = content;
-	t->next = NULL;
+	t->next = 0;
 	return (t);
 }

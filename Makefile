@@ -6,13 +6,13 @@
 #    By: jescully <jescully@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 09:50:54 by jescully          #+#    #+#              #
-#    Updated: 2020/12/02 13:45:23 by jean             ###   ########.fr        #
+#    Updated: 2020/12/03 09:11:41 by jean             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = clang
+CC = clang-9
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -77,7 +77,8 @@ fclean: clean
 	/bin/rm -f $(NAME)
 
 bonus: $(OBJBON)
-	ar rc $(NAME) $? $(OBJBON)
+	ar rc $(NAME) $(OBJBON)
 	ranlib $(NAME)
 
 re: fclean all
+

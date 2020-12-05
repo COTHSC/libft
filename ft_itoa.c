@@ -6,37 +6,57 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:45:20 by jescully          #+#    #+#             */
-/*   Updated: 2020/11/26 11:31:53 by jescully         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:06:01 by jean             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	ilength(long long int number)
+{
+	int i;
+
+	i = 1;
+	if (number < 0)
+	{
+		i++;
+		number = -number;
+	}
+	
+	while (number >= 10)
+	{
+		number = number/10;
+		i++;
+	}
+	return (i);
+}
+
 char	*ft_itoa(int n)
 {
-	char *str;
+	char			*ret;
+	unsigned int	nb;
+	int				len;
 
-	if (n == -2147483648)
-	{
-		if (!(str = (char*)(malloc(sizeof(char) * (12)))))
-			return (NULL);
-		ft_strlcpy(str, "-2147483648", 12);
-		return (str);
-	}
-	if (!(str = (char*)(malloc(sizeof(char) * (2)))))
+	if (!(ret = (char*)malloc(sizeof(char) * (ilength(n) + 1))))
 		return (NULL);
+	ret[ilength(n)] = '\0';
 	if (n < 0)
 	{
-		str[0] = '-';
-		str[1] = '\0';
-		str = ft_strjoin(str, ft_itoa(-n));
+		ret[0] = '-';
+		nb = -n;
 	}
-	if (n >= 10)
-		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
-	if (n < 10 && n >= 0)
+	else
+		nb = n;
+	len = ilength(n) - 1;
+	while (ilength(nb) !=1)
 	{
-		str[0] = n + '0';
-		str[1] = '\0';
+		ret[len--] = nb % 10 + '0';
+		nb = nb / 10;
 	}
-	return (str);
+	if (n >= 0)
+		ret[0] = nb + '0';
+	else
+		ret[1] = nb + '0';
+	return (ret);
+
 }
