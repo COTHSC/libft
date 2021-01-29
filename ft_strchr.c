@@ -6,7 +6,7 @@
 /*   By: jescully <jescully@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 14:05:59 by jescully          #+#    #+#             */
-/*   Updated: 2020/12/02 13:04:54 by jean             ###   ########.fr       */
+/*   Updated: 2021/01/29 11:02:28 by jescully         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strchr(const char *s, int c)
 	int		i;
 	char	*cs;
 
+	if(!s)
+		return (NULL);
 	cs = (char *)s;
 	i = 0;
 	while (s[i])
